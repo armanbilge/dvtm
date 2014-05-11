@@ -36,6 +36,7 @@
 #include "grid.c"
 #include "bstack.c"
 #include "fullscreen.c"
+#include "fibonacci.c"
 
 /* by default the first layout entry is used */
 static Layout layouts[] = {
