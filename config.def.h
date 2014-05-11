@@ -39,6 +39,8 @@
 
 /* by default the first layout entry is used */
 static Layout layouts[] = {
+    { "[[[", spiral },
+    { "[i.", dwindle },
 	{ "[]=", tile },
 	{ "+++", grid },
 	{ "TTT", bstack },
@@ -60,6 +62,8 @@ static Key keys[] = {
 	{ MOD,   'g',           { setlayout,      { "+++" }                   } },
 	{ MOD,   'b',           { setlayout,      { "TTT" }                   } },
 	{ MOD,   'm',           { setlayout,      { "[ ]" }                   } },
+    { MOD,   'd',           { setlayout,      { "[i." }                   } },
+    { MOD,   'f',           { setlayout,      { "[[[" }                   } },
 	{ MOD,   ' ',           { setlayout,      { NULL }                    } },
 	{ MOD,   'h',           { setmfact,       { "-0.05" }                 } },
 	{ MOD,   'l',           { setmfact,       { "+0.05" }                 } },
