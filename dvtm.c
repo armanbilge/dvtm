@@ -709,8 +709,8 @@ cleanup() {
 static char *getcwd_by_pid(Client *c) {
 	if (!c)
 		return NULL;
-	char buf[32];
-	snprintf(buf, sizeof buf, "/proc/%d/cwd", c->pid);
+    char *buf = getenv("PWD");
+//  snprintf(buf, sizeof buf, "/proc/%d/cwd", c->pid);
 	return realpath(buf, NULL);
 }
 
